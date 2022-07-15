@@ -1,0 +1,23 @@
+{
+  "name": "genogram_drawio",
+  "version": "1.0.0",
+  "description": "translate english version to other languages",
+  "main": "translate.js",
+  "scripts": {
+    "translate": "node translate.js de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebesch/genogram_drawio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebesch/genogram_drawio/issues"
+  },
+  "homepage": "https://github.com/ebesch/genogram_drawio#readme",
+  "dependencies": {
+    "pako": "^2.0.4",
+    "xml2json": "^0.12.0"
+  }
+}
