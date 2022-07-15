@@ -1,0 +1,127 @@
+[
+  {
+    "en": "Male",
+    "de": "männlich"
+  },
+
+  {
+    "en": "Female",
+    "de": "weiblich"
+  },
+
+  {
+    "en": "Unknown gender",
+    "de": "unbekanntes Geschlecht"
+  },
+
+  {
+    "en": "Index person marker (female)",
+    "de": "Klienten-Markierung (weiblich)"
+  },
+
+  {
+    "en": "Index person marker (male)",
+    "de": "Klienten-Markierung (männlich)"
+  },
+
+  {
+    "en": "Pregnancy",
+    "de": "Schwangerschaft"
+  },
+
+  {
+    "en": "Pet",
+    "de": "Haustier"
+  },
+
+  {
+    "en": "Adoption / Pet link",
+    "de": "Adoption- / Haustier-Verknüpfung"
+  },
+
+  {
+    "en": "Foster child link",
+    "de": "Pflegekind-Verknüpfung"
+  },
+
+  {
+    "en": "Link",
+    "de": "Verknüpfung"
+  },
+
+  {
+    "en": "Divorced",
+    "de": "Scheidung"
+  },
+
+  {
+    "en": "Broke off",
+    "de": "Trennung"
+  },
+
+  {
+    "en": "Conflict",
+    "de": "Konfikt"
+  },
+
+  {
+    "en": "Death (male)",
+    "de": "Verstorben (männlich)"
+  },
+
+  {
+    "en": "Death (female)",
+    "de": "Verstorben (weiblich)"
+  },
+
+  {
+    "en": "Miscarriage",
+    "de": "Fehlgeburt"
+  },
+
+  {
+    "en": "Abortion",
+    "de": "Abtreibung"
+  },
+
+  {
+    "en": "Twin (male-male)",
+    "de": "Zwillinge (männlich / männlich)"
+  },
+
+  {
+    "en": "Twin (female-female)",
+    "de": "Zwillinge (weiblich / weiblich)"
+  },
+
+  {
+    "en": "Twins (male-female)",
+    "de": "Zwillinge (männlich / weiblich)"
+  },
+
+  {
+    "en": "Identical twins (male-male)",
+    "de": "eineiige Zwillinge (männlich / männlich)"
+  },
+
+  {
+    "en": "Identical twins (female-female)",
+    "de": "eineiige Zwillinge (weiblich / weiblich)"
+  },
+  {
+    "en": "Identical twins (male-female)",
+    "de": "eineiige Zwillinge (männlich / weiblich)"
+  },
+  {
+    "en": "name",
+    "de": "Name"
+  },
+  {
+    "en": "<span>name</span>",
+    "de": "Name"
+  },
+  {
+    "en": "age",
+    "de": "Alter"
+  }
+]
