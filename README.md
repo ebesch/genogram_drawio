@@ -16,3 +16,14 @@ Alternatively, you can manually import the library from File / Open Library from
 ## Screenshot
 
 ![Screenshot](genogram_screenshot.png "Screenshot")
+
+## Translations
+
+### German
+
+[Click here to open the  genogram library for draw.io / diagrams.net](https://app.diagrams.net/?splash=0&clibs=Uhttps%3A%2F%2Fraw.githubusercontent.com%2Febesch%2Fgenogram_drawio%2Fmain%2Fgenogram_de.xml
+)
+
+Alternatively, you can manually import the library from File / Open Library from / URL:
+
+    https://raw.githubusercontent.com/ebesch/genogram_drawio/main/genogram_de.xml
