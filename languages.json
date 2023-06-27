@@ -123,5 +123,13 @@
   {
     "en": "age",
     "de": "Alter"
+  },
+  {
+    "en": "year",
+    "de": "Jahr"
+  },
+  {
+    "en": "married since",
+    "de": "verheiratet seit"
   }
 ]
