@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ebesch/genogram_drawio#readme",
   "dependencies": {
+    "html-entities": "^2.4.0",
     "pako": "^2.0.4",
     "xml2json": "^0.12.0"
   }
