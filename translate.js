@@ -5,13 +5,18 @@ var fs = require('fs');
 var path = require('path');
 var pako = require('pako');
 var xml2json = require('xml2json');
+var htmlEntities = require('html-entities');
+
 
 // translate "text" to "lng" / destination language
 // return "text" if no translations available
 function translate(text, lng) {
     var translation = languages.filter(language => language.en === text)
     if (translation && translation.length == 1) {
-        return translation[0][lng]
+        const t = translation[0][lng]
+        if (t !== undefined) {
+            return t
+        }
     }
 
     return text;
@@ -54,11 +59,21 @@ process.argv.slice(2).forEach(destLanguage => {
     const mxlibrary = JSON.parse(genogram_json)
 
     mxlibrary.forEach(element => {
-        const xml = decodeURIComponent(Buffer.from(pako.inflateRaw(Buffer.from(element.xml, 'base64'))).toString('ascii'))
-        const translated_xml = translateValue(xml, destLanguage)
-        element.xml = Buffer.from(pako.deflateRaw(encodeURIComponent(translated_xml))).toString('base64')
+        let xml;
+        if(element.xml.startsWith('&')) {
+            xml = htmlEntities.decode(element.xml)
+        } else {
+            xml = decodeURIComponent(Buffer.from(pako.inflateRaw(Buffer.from(element.xml, 'base64'))).toString('ascii'))
+        }
 
-        element.title = translate(element.title, destLanguage)
+        if( destLanguage === 'compress') {
+            element.xml = Buffer.from(pako.deflateRaw(encodeURIComponent(xml))).toString('base64')
+        } else { // translate
+            const translated_xml = translateValue(xml, destLanguage)
+            element.xml = Buffer.from(pako.deflateRaw(encodeURIComponent(translated_xml))).toString('base64')
+            element.title = translate(element.title, destLanguage)
+        }
+
     })
 
     fs.writeFileSync(libraryFilename, ["<mxlibrary>", JSON.stringify(mxlibrary), "</mxlibrary>"].join(""));
