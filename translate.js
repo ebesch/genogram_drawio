@@ -46,8 +46,11 @@ function translateValue(xml, lng) {
 }
 
 // main
-const languages = JSON.parse(fs.readFileSync(path.join(__dirname, 'languages.json')))
+if(process.argv.length <= 2) {
+    throw new Error("target language is not specified")
+}
 
+const languages = JSON.parse(fs.readFileSync(path.join(__dirname, 'languages.json')))
 process.argv.slice(2).forEach(destLanguage => {
 
     const libraryFilename = "genogram_" + destLanguage + ".xml"
