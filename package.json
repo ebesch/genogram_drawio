@@ -4,7 +4,8 @@
   "description": "translate english version to other languages",
   "main": "translate.js",
   "scripts": {
-    "translate": "node translate.js de"
+    "translate": "node translate.js de",
+    "compress": "node translate.js compress"
   },
   "repository": {
     "type": "git",
